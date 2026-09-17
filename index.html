@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tilly's Moon&Muse Wear | Sleepwear</title>
+<meta name="description" content="Tilly's Moon&Muse Wear — modern, cozy and stylish sleepwear.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#201a1d;--muted:#766c71;--cream:#fbf3ef;--rose:#c88f91;--rose2:#9c6267;--line:#eadeda}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:"DM Sans",sans-serif;color:var(--ink);line-height:1.6;background:#fff}
+a{text-decoration:none;color:inherit}.container{width:min(1140px,92%);margin:auto}
+.top{background:var(--ink);color:#fff;text-align:center;padding:9px;font-size:12px;letter-spacing:2px}
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav{height:78px;display:flex;align-items:center;justify-content:space-between}
+.logo{font:600 24px "Playfair Display",serif;line-height:1}.logo span{display:block;text-align:center;font:700 9px "DM Sans",sans-serif;letter-spacing:4px;text-transform:uppercase;color:var(--rose2);margin-top:7px}
+.links{display:flex;gap:30px;font-size:14px;font-weight:700}.links a:hover{color:var(--rose2)}.menu{display:none;background:none;border:0;font-size:27px}
+.hero{background:var(--cream);min-height:650px;display:grid;grid-template-columns:1fr 1fr}.hero-copy{display:flex;align-items:center;padding:70px clamp(25px,7vw,100px)}
+.eyebrow{text-transform:uppercase;letter-spacing:3px;font-size:11px;font-weight:700;color:var(--rose2);margin-bottom:18px}
+h1,h2,h3{font-family:"Playfair Display",serif;line-height:1.1}h1{font-size:clamp(48px,6vw,78px);max-width:600px}
+.hero p{color:var(--muted);font-size:17px;max-width:510px;margin:23px 0 30px}.buttons{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;justify-content:center;align-items:center;padding:13px 21px;border:1px solid var(--ink);font-size:13px;font-weight:700;border-radius:3px;transition:.2s}.btn.dark{background:var(--ink);color:#fff}.btn.light{background:#fff}.btn:hover{transform:translateY(-2px)}
+.hero-photo{min-height:650px}.hero-photo img{width:100%;height:100%;object-fit:cover}
+.section{padding:88px 0}.head{text-align:center;margin-bottom:42px}.head h2{font-size:45px}.head p{max-width:600px;margin:12px auto;color:var(--muted)}
+.products{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.card{border:1px solid var(--line);background:#fff;overflow:hidden;transition:.25s}.card:hover{transform:translateY(-5px);box-shadow:0 15px 35px rgba(32,26,29,.1)}
+.photo{height:380px;background:var(--cream)}.photo img{width:100%;height:100%;object-fit:cover}.info{padding:19px}.info h3{font-size:23px}.info p{color:var(--muted);font-size:13px;margin:6px 0 12px}.price{font-weight:700;color:var(--rose2)}.note{font-size:12px;color:var(--muted);margin-top:4px}.order-product{margin-top:14px;width:100%;background:var(--ink);color:#fff;border:0;cursor:pointer}.order-product:hover{background:#3b3236}
+.why{background:var(--ink);color:#fff}.why .head p{color:#cfc7ca}.features{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.feature{text-align:center;border:1px solid #494247;padding:30px 20px}.feature .icon{font-size:29px}.feature h3{font-size:23px;margin:10px 0}.feature p{font-size:14px;color:#cfc7ca}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center}.about-photo{height:500px}.about-photo img{width:100%;height:100%;object-fit:cover}.about h2{font-size:46px;margin-bottom:20px}.about p{color:var(--muted);margin-bottom:15px}
+.order{background:#f4e6e0;text-align:center;padding:88px 0}.order h2{font-size:50px}.order p{max-width:620px;margin:14px auto 28px;color:var(--muted)}.socials{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+.order-form{max-width:650px;margin:35px auto 0;background:#fff;padding:30px;text-align:left;border:1px solid var(--line);box-shadow:0 12px 30px rgba(32,26,29,.07)}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.field{display:flex;flex-direction:column;gap:7px}.field.full{grid-column:1/-1}
+.field label{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px}.field input,.field select,.field textarea{font:inherit;padding:12px;border:1px solid #d9ccca;background:#fff;outline:none}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--rose2)}
+.submit{width:100%;margin-top:18px;cursor:pointer;background:var(--ink);color:#fff}.form-help{font-size:12px;color:var(--muted);margin-top:10px;text-align:center}
+@media(max-width:800px){.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}}
+
+footer{background:#171315;color:#fff;padding:52px 0 22px}.foot{display:flex;justify-content:space-between;gap:25px}.foot p{color:#aaa;font-size:13px;max-width:360px;margin-top:10px}.social{display:flex;gap:18px;font-size:13px}.social a:hover{color:#d8a5a7}.copy{text-align:center;border-top:1px solid #373033;margin-top:35px;padding-top:18px;color:#999;font-size:12px}
+@media(max-width:800px){.links{display:none;position:absolute;top:78px;left:0;right:0;background:#fff;padding:20px 5%;flex-direction:column;gap:16px;border-bottom:1px solid var(--line)}.links.open{display:flex}.menu{display:block}.hero{grid-template-columns:1fr}.hero-photo{min-height:430px;order:-1}.hero-copy{padding:55px 6%}.products,.features,.about{grid-template-columns:1fr}.about-photo{height:370px}.section{padding:65px 0}.foot{flex-direction:column}}
+</style>
+</head>
+<body>
+<div class="top">MODERN SLEEPWEAR • COZY NIGHTS • BEAUTIFUL MORNINGS</div>
+<header><div class="container"><nav>
+<a class="logo" href="#home">Tilly's Moon&Muse<span>Wear</span></a>
+<div class="links" id="links"><a href="#home">Home</a><a href="#collection">Collection</a><a href="#about">About</a><a href="#order">Order</a></div>
+<button class="menu" onclick="document.getElementById('links').classList.toggle('open')">☰</button>
+</nav></div></header>
+
+<section class="hero" id="home">
+<div class="hero-copy"><div><div class="eyebrow">Welcome to Moon&Muse</div>
+<h1>Your comfort. Your mood. Your muse.</h1>
+<p>Discover cozy, stylish pajamas designed to make your nights softer and your slow mornings even better.</p>
+<div class="buttons"><a class="btn dark" href="#collection">Shop the collection</a><a class="btn light" href="#order">Order now</a></div>
+</div></div>
+<div class="hero-photo"><img src="pink-grey-set.jpeg" alt="Pink and grey striped sleepwear set"></div>
+</section>
+
+<section class="section" id="collection"><div class="container">
+<div class="head"><div class="eyebrow">Shop our pieces</div><h2>Made for cozy moments.</h2><p>Featured pieces from Tilly's Moon&Muse Wear. Message us for available sizes, colours and prices.</p></div>
+<div class="products">
+<article class="card"><div class="photo"><img src="pink-grey-set.jpeg" alt="Pink and grey striped pajama set"></div><div class="info"><h3>Pink & Grey Stripes</h3><p>Relaxed striped set for nights and lazy mornings.</p><div class="price">KES 250</div><div class="note">Size: Medium • Quantity: 1</div><a class="btn order-product" href="https://wa.me/254703723014?text=Hello%20Tilly%27s%20Moon%26Muse%20Wear%2C%20I%20would%20like%20to%20order%20the%20Pink%20%26%20Grey%20Stripes%20pajama%20set%20for%20KES%20250." target="_blank">Order this set</a></div></article>
+<article class="card"><div class="photo"><img src="pink-plaid-set.jpeg" alt="Pink, white and brown plaid pajama set"></div><div class="info"><h3>Pink Plaid Set</h3><p>A playful plaid look with a classic cozy feel.</p><div class="price">KES 250</div><div class="note">Size: Medium • Quantity: 1</div><a class="btn order-product" href="https://wa.me/254703723014?text=Hello%20Tilly%27s%20Moon%26Muse%20Wear%2C%20I%20would%20like%20to%20order%20the%20Pink%20Plaid%20Set%20pajama%20set%20for%20KES%20250." target="_blank">Order this set</a></div></article>
+<article class="card"><div class="photo"><img src="cozy-fleece-set.jpeg" alt="Black, white and red cozy fleece sleepwear"></div><div class="info"><h3>Cozy Fleece</h3><p>Warm and plush for extra-comfy evenings.</p><div class="price">KES 250</div><div class="note">Size: Medium • Quantity: 1</div><a class="btn order-product" href="https://wa.me/254703723014?text=Hello%20Tilly%27s%20Moon%26Muse%20Wear%2C%20I%20would%20like%20to%20order%20the%20Cozy%20Fleece%20pajama%20set%20for%20KES%20250." target="_blank">Order this set</a></div></article>
+
+<article class="card"><div class="photo"><img src="blue-christmas-fleece.jpeg" alt="Blue Christmas patterned fleece pajama set"></div><div class="info"><h3>Blue Christmas Fleece</h3><p>Playful festive fleece with candy-cane and gingerbread details.</p><div class="price">KES 250</div><div class="note">Size: Medium • Quantity: 1</div><a class="btn order-product" href="https://wa.me/254703723014?text=Hello%20Tilly%27s%20Moon%26Muse%20Wear%2C%20I%20would%20like%20to%20order%20the%20Blue%20Christmas%20Fleece%20pajama%20set%20for%20KES%20250." target="_blank">Order this set</a></div></article>
+<article class="card"><div class="photo"><img src="blue-fleece-set.jpeg" alt="Soft blue fleece sleepwear"></div><div class="info"><h3>Cloud Blue Fleece</h3><p>Soft blue fleece for warm, cozy nights at home.</p><div class="price">KES 250</div><div class="note">Size: Medium • Quantity: 1</div><a class="btn order-product" href="https://wa.me/254703723014?text=Hello%20Tilly%27s%20Moon%26Muse%20Wear%2C%20I%20would%20like%20to%20order%20the%20Cloud%20Blue%20Fleece%20pajama%20set%20for%20KES%20250." target="_blank">Order this set</a></div></article>
+</div></div></section>
+
+<section class="section why"><div class="container">
+<div class="head"><div class="eyebrow">The Moon&Muse promise</div><h2>Comfort, with character.</h2><p>We want your sleepwear to feel as personal as your style.</p></div>
+<div class="features"><div class="feature"><div class="icon">✦</div><h3>Stylish pieces</h3><p>Fun prints and polished looks for your personal sleepwear collection.</p></div>
+<div class="feature"><div class="icon">♡</div><h3>Cozy feeling</h3><p>Relaxed pieces made for winding down and feeling good.</p></div>
+<div class="feature"><div class="icon">✧</div><h3>Easy ordering</h3><p>Reach us directly on Instagram, TikTok or WhatsApp.</p></div></div>
+</div></section>
+
+<section class="section" id="about"><div class="container about">
+<div class="about-photo"><img src="pink-plaid-set.jpeg" alt="Tilly's Moon&Muse Wear plaid pajama set"></div>
+<div><div class="eyebrow">Our brand</div><h2>Sleepwear that feels like you.</h2>
+<p>Tilly's Moon&Muse Wear is a modern sleepwear brand built around comfort, personality and beautiful everyday moments.</p>
+<p>Browse our pieces, then send us a message with the style and size you want. We'll help you with availability, pricing and delivery.</p>
+<a class="btn dark" href="#order">Let's get you cozy</a></div>
+</div></section>
+
+<section class="order" id="order"><div class="container"><div class="eyebrow">Place your order</div><h2>Found your favourite?</h2>
+<p>Tell us which pajama set you want and your size. Choose whichever platform is easiest for you.</p>
+<div class="socials">
+<a class="btn dark" href="https://instagram.com/tillys_wears" target="_blank">Instagram @tillys_wears</a>
+<a class="btn dark" href="https://www.tiktok.com/@tillys.moonmuse.w" target="_blank">TikTok @tillys.moonmuse.w</a>
+<a class="btn dark" href="https://wa.me/254703723014" target="_blank">WhatsApp +254 703 723 014</a>
+</div>
+<form class="order-form" onsubmit="sendOrder(event)">
+<div class="form-grid">
+<div class="field"><label for="name">Your name</label><input id="name" required placeholder="Enter your name"></div>
+<div class="field"><label for="phone">Phone number</label><input id="phone" required placeholder="+254..."></div>
+<div class="field full"><label for="product">Choose your pajama</label><select id="product" required>
+<option value="">Select a product</option>
+<option>Pink & Grey Stripes — KES 250</option><option>Pink Plaid Set — KES 250</option>
+<option>Cozy Fleece — KES 250</option><option>Blue Christmas Fleece — KES 250</option>
+<option>Cloud Blue Fleece — KES 250</option></select></div>
+<div class="field"><label for="size">Size</label><select id="size"><option>Medium (M)</option></select></div>
+<div class="field"><label for="quantity">Quantity</label><select id="quantity"><option>1</option></select></div>
+<div class="field full"><label for="location">Delivery location</label><input id="location" required placeholder="Town / area"></div>
+<div class="field full"><label for="message">Extra note (optional)</label><textarea id="message" rows="3" placeholder="Any delivery instructions?"></textarea></div>
+</div>
+<button class="btn submit" type="submit">Send order on WhatsApp</button>
+<div class="form-help">Your order details will open in WhatsApp ready to send.</div>
+</form>
+</div></div></section>
+
+<footer><div class="container"><div class="foot"><div><div class="logo">Tilly's Moon&Muse<span>Wear</span></div><p>Modern sleepwear for cozy nights, beautiful mornings and your own little moments of luxury.</p></div>
+<div class="social"><a href="https://instagram.com/tillys_wears" target="_blank">Instagram</a><a href="https://www.tiktok.com/@tillys.moonmuse.w" target="_blank">TikTok</a><a href="https://wa.me/254703723014" target="_blank">WhatsApp</a></div></div>
+<div class="copy">© 2026 Tilly's Moon&Muse Wear. All rights reserved.</div></div></footer>
+<script>
+function sendOrder(event){
+  event.preventDefault();
+  const name=document.getElementById('name').value.trim();
+  const phone=document.getElementById('phone').value.trim();
+  const product=document.getElementById('product').value;
+  const size=document.getElementById('size').value;
+  const quantity=document.getElementById('quantity').value;
+  const location=document.getElementById('location').value.trim();
+  const note=document.getElementById('message').value.trim();
+  const text=`Hello Tilly's Moon&Muse Wear!%0A%0AI would like to place an order.%0A%0AName: ${encodeURIComponent(name)}%0APhone: ${encodeURIComponent(phone)}%0AProduct: ${encodeURIComponent(product)}%0ASize: ${encodeURIComponent(size)}%0AQuantity: ${encodeURIComponent(quantity)}%0ADelivery location: ${encodeURIComponent(location)}%0AExtra note: ${encodeURIComponent(note || 'None')}`;
+  window.open('https://wa.me/254703723014?text='+text,'_blank');
+}
+</script>
+</body>
+</html>
